@@ -1,0 +1,34 @@
+<h2>Cadastro de Cerveja</h2>
+<p class="msg">
+  {{ msg }}
+</p>
+
+<form name="beerForm">
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Name</span>
+      <input type="text" data-ng-model="beer.name" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Price</span>
+      <input type="text" data-ng-model="beer.price" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Alcohol</span>
+      <input type="text" data-ng-model="beer.alcohol" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Description</span>
+      <textarea data-ng-model="beer.description"></textarea>
+    </label>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-large" data-ng-click="create(beer)">Criar</button>
+  </div>
+</form>

@@ -1,0 +1,18 @@
+<h2>Listagem das cervejas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th data-ng-click='ordenar("name")'>Nome</th>
+      <th data-ng-click='ordenar("price")'>Preço</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat='beer in beers | orderBy:predicate:reverse'>
+      <td><a href="#/beers/{{ beer._id }}">{{ beer.name }}</a></td>
+      <td>{{ beer.price }}</td>
+      <td><button data-ng-click='remove(beer)'>REMOVER</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<button data-ng-click='rodar()'>Usuario</button>
+<p data-ng-show='mostraUser'>
+  <img class='user-avatar' data-ng-src="{{user.avatar_url}}" alt="">
+  <br />
+  <span class='user-label'>Login:</span> {{user.login}} 
+  <br />
+  <span class='user-label'>Name:</span> {{user.name}}
+  <br />
+  <span class='user-label'>Company:</span> {{user.company}}
+  <br />
+  <span class='user-label'>Blog:</span> {{user.blog}}
+  <br />
+  <span class='user-label'>Email:</span> {{user.email}}
+  <br />
+  <span class='user-label'>Location:</span> {{user.location}}
+</p>
